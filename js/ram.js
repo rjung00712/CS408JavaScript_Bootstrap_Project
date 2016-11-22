@@ -69,12 +69,14 @@ $('.navbar-collapse ul li a').click(function() {
 
 
     var slideImages = new Array();
+    var whichimage = 0;
+
     slideImages[0] = new Image();
     slideImages[0].src = "img/pizza1.jpg";
     slideImages[1] = new Image();
     slideImages[1].src = "img/pizza2.jpg";
     slideImages[2] = new Image();
-    slideImages[2].src = "img/pizza2.jpg";
+    slideImages[2].src = "img/pizza3.jpg";
 
     //variable that will increment through the images
     var step = 0;
@@ -82,12 +84,29 @@ $('.navbar-collapse ul li a').click(function() {
         if(!document.images)
             return;
         document.getElementById('slide').src= slideImages[step].src;
+
+        whichimage = step;
+
         if (step<2)
             step++;
         else
             step=0;
         setTimeout("slideit()",2500);
     }
+
+    function slidelink() {
+        if(whichimage == 0) {
+            window.location = "http://minimalistbaker.com/my-favorite-vegan-pizza/";
+        }
+        else if(whichimage == 1) {
+            window.location = "http://minimalistbaker.com/my-favorite-vegan-pizza/";
+        }
+        else if(whichimage == 3) {
+            window.location = "http://minimalistbaker.com/my-favorite-vegan-pizza/";
+        }
+
+    }
+
     slideit();
 
 
