@@ -40,7 +40,7 @@ $('.navbar-collapse ul li a').click(function() {
 //     video.setCenter(new google.maps.LatLng(40.6700, -73.9400));
 // });
 
-function init() {
+// function init() {
     // // Basic options for a simple Google Map
     // // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     // var mapOptions = {
@@ -202,6 +202,7 @@ function init() {
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
 
+
         if (n > slides.length) {
             slideIndex = 1
         }
@@ -221,8 +222,7 @@ function init() {
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
 
-
-    }
+    // }
 
 
 
