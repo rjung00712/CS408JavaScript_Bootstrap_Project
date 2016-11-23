@@ -43,15 +43,11 @@
     <script src="js/ram.js"></script>
     <!--<script src="js/ram.min.js"></script>-->
 
-
     <script >
-
         $(document).ready(function() {
             $('#slide').on('click', function(ev) {
-
                 $("#video")[0].src += "&autoplay=1";
                 ev.preventDefault();
-
             });
         });
     </script>
@@ -84,7 +80,7 @@
                     <a class="page-scroll" href="#about">Gallery</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#founder">Recipe Videos</a>
+                    <a class="page-scroll" href="#recipe_videos">Recipe Videos</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -111,35 +107,23 @@
 <!-- About Section -->
 <section id="about" class="container content-section text-center">
     <div class="row">
-
         <header class="image-gallery" >
             <div class="title-theme">
                 <h1 class="brand-name">Pizza Gallery</h1>
                 <p class="group-description">Click on your favorite picture to see the recipe</p>
 
                 <img src="img/pizza1.jpg" id="slide" onclick="playVideo();" style="width:100%" />
-                <!--<a href="#row" id="playVideo">play video</a>-->
 
                 <script>slideit();</script>
             </div>
         </header>
-
-
     </div>
 </section>
 
-
 <!-- Download Section -->
-<section id="founder" class="content-section text-center">
+<section id="recipe_videos" class="content-section text-center">
     <div class="download-section">
         <h2>Recipe Videos</h2>
-
-        <!--<h1>The Guys behind RAM</h1>-->
-        <!--<p1>Richard Jung</p1>-->
-        <!--</br>-->
-        <!--<p1>Ashkan Ghafari</p1>-->
-        <!--</br>-->
-        <!--<p1>Magloire Pungi</p1>-->
     </div>
 </section>
 
@@ -147,12 +131,7 @@
 <div class="content-section text-center">
     <div class="row">
         <div class="col-xs-4-col-xs-offset-4">
-            <!--<iframe class="video" id="currVideo" width="560" height="315" src="https://www.youtube.com/embed/WFlRkFw7K8U" frameborder="0" allowfullscreen></iframe>-->
-
-            <!--<a id="play-video" href="#">Play Video</a><br />-->
-
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/WFlRkFw7K8U" frameborder="0" allowfullscreen></iframe>
-
         </div>
     </div>
 </div>
@@ -178,7 +157,6 @@
         </div>
     </div>
 </section>
-
         <footer>
             <div class="container text-center">
                 <p>Copyright &copy; RAM</p>
