@@ -83,17 +83,23 @@ $('.navbar-collapse ul li a').click(function() {
 
     // var x = document.getElementById("slide");
 
+
 // <img src="img/pizza1.jpg" id="slide" style="width:100%" />
 
+var x; //= document.getElementsByTagName("img").item(0);
+var v; //= x.getAttribute("src");
+
     function slideit() {
+
+        x = document.getElementsByTagName("img").item(0);
+        v = x.getAttribute("src");
 
         if(!document.images)
             return;
 
-        // currentSlide.src = slideImages[step].src;
+        v = slideImages[step].src;
+
         document.getElementById('slide').src = slideImages[step].src;
-
-
 
         whichimage = step;
 
@@ -103,12 +109,9 @@ $('.navbar-collapse ul li a').click(function() {
         else {
             step = 0;
         }
-
-
-
+        x.setAttribute("src", v);
 
         setTimeout("slideit()",2500);
-
     }
 
     function slidelink() {
