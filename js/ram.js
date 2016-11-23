@@ -80,18 +80,35 @@ $('.navbar-collapse ul li a').click(function() {
 
     //variable that will increment through the images
     var step = 0;
-    function slideit(){
+
+    // var x = document.getElementById("slide");
+
+// <img src="img/pizza1.jpg" id="slide" style="width:100%" />
+
+    function slideit() {
+
         if(!document.images)
             return;
-        document.getElementById('slide').src= slideImages[step].src;
+
+        // currentSlide.src = slideImages[step].src;
+        document.getElementById('slide').src = slideImages[step].src;
+
+
 
         whichimage = step;
 
-        if (step<2)
+        if (step<2) {
             step++;
-        else
-            step=0;
+        }
+        else {
+            step = 0;
+        }
+
+
+
+
         setTimeout("slideit()",2500);
+
     }
 
     function slidelink() {
@@ -106,9 +123,10 @@ $('.navbar-collapse ul li a').click(function() {
         }
 
     }
-
     slideit();
 
 
+    function getVideo() {
 
+    }
 

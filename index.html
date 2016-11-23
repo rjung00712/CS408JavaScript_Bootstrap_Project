@@ -42,6 +42,18 @@
     <!-- Theme JavaScript -->
     <script src="js/ram.js"></script>
     <!--<script src="js/ram.min.js"></script>-->
+
+
+    <script type="text/javascript">
+        var play = document.getElementsBy
+
+        function playVideo(ids) {
+            var id = document.getElementById(id);
+            document.write(id + "was clicked");
+        }
+    </script>
+
+
 </head>
 
 
@@ -71,7 +83,7 @@
                     <a class="page-scroll" href="#about">Gallery</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#founder">Founders</a>
+                    <a class="page-scroll" href="#founder">Recipe Videos</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -89,8 +101,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h1 class="brand-heading">RAM Pizza Guys</h1>
-                <p class="intro-text">A simple website representing us founders. Live the moment.
-                    <br>Sharing Our Love For Pizza With The World</p>
+                <p class="intro-text">Sharing Our Love For Pizza With The World</p>
             </div>
         </div>
     </div>
@@ -102,15 +113,17 @@
 
         <header class="image-gallery" >
             <div class="title-theme">
-                <h1 class="brand-name">Pizza Recipes</h1>
+                <h1 class="brand-name">Pizza Gallery</h1>
                 <p class="group-description">Click on your favorite picture to see the recipe</p>
 
-                <a href ="javascript:slidelink()">
-                    <img src="img/pizza1.jpg" id="slide" style="width:100%" />
-                </a>
+                <!--<a href ="javascript:playVideo(id);">-->
+                <img src="img/pizza1.jpg" id="slide" style="width:100%" />
+                <!--</a>-->
+
+
 
                 <script>slideit();</script>
-                <script>onclick="slidelink()";</script>
+                <!--<script>onclick="slidelink()";</script>-->
             </div>
         </header>
 
@@ -118,11 +131,10 @@
     </div>
 </section>
 
+
 <!-- Download Section -->
 <section id="founder" class="content-section text-center">
     <div class="download-section">
-        <!--<div class="container">-->
-        <!--<div class="col-lg-8 col-lg-offset-2" >-->
         <h1>The Guys behind RAM</h1>
         <p1>Richard Jung</p1>
         </br>
@@ -131,6 +143,22 @@
         <p1>Magloire Pungi</p1>
     </div>
 </section>
+
+<!-- video section -->
+<div class="content-section text-center">
+    <div class="row">
+        <div class="col-xs-4-col-xs-offset-4">
+
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WFlRkFw7K8U" frameborder="0" allowfullscreen></iframe>
+
+
+        </div>
+
+    </div>
+</div>
+
+
 
 <!-- Contact Section -->
 <section id="contact" class="container content-section text-center">
@@ -158,7 +186,7 @@
 
         <footer>
             <div class="container text-center">
-                <p>Copyright &copy; RAMForever</p>
+                <p>Copyright &copy; RAM</p>
             </div>
         </footer>
 </body>
